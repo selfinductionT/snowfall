@@ -4,9 +4,9 @@ import time
 def s(x):                                                #  #  #
     b = [' ']*80                                          #   #
     for n in x:                                        ###  #  ###
-        try:                                              #   #
+        if n<80:                                          #   #
             b[n] = '*'                                   #  #  #
-        except IndexError:
+        else:
             pass
     b = ''.join(b)
     return b
